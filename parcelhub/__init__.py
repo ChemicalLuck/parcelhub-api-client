@@ -90,7 +90,7 @@ class ListShipmentsResponse(TypedDict):
 class GetLatestTrackingEventResponse(TypedDict):
     transaction_message_id: str
     service_result: ServiceResult
-    tracking_result: list[SearchResult]
+    tracking_result: SearchResult
 
 
 class GetTrackingHistoryResponse(TypedDict):
