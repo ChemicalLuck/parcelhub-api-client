@@ -79,6 +79,10 @@ class Package(TypedDict):
     package_tracking_events: list[TrackingEvent]
 
 
+class TrackingResult(TypedDict):
+    search_result: SearchResult
+
+
 class ListShipmentsResponse(TypedDict):
     transaction_message_id: str
     service_result: ServiceResult
@@ -90,7 +94,7 @@ class ListShipmentsResponse(TypedDict):
 class GetLatestTrackingEventResponse(TypedDict):
     transaction_message_id: str
     service_result: ServiceResult
-    tracking_result: SearchResult
+    tracking_result: TrackingResult
 
 
 class GetTrackingHistoryResponse(TypedDict):
